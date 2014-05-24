@@ -1,0 +1,28 @@
+{
+  "name": "gulpup",
+  "version": "0.0.1",
+  "description": "a gulp plugin help you upload files to upyun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/undoZen/gulpup.git"
+  },
+  "keywords": [
+    "upyun",
+    "gulpplugin"
+  ],
+  "author": "undoZen <opensource@undozen.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undoZen/gulpup/issues"
+  },
+  "homepage": "https://github.com/undoZen/gulpup",
+  "dependencies": {
+    "gulp-util": "^2.2.14",
+    "through2": "^0.4.2",
+    "upyun-official": "0.14.5"
+  }
+}
