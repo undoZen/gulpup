@@ -19,9 +19,7 @@ var UPYun = require('upyun-official').UPYun;
 exports = module.exports = function (opts) {
   var uploadedFilePath = process.cwd() + '/.upyun.uploaded.list';
   var exists = fs.existsSync(uploadedFilePath);
-  var list = fs.readFileSync(uploadedFilePath, 'utf-8')
-  list = list.trim().replace(/,$/, '');
-  var uploaded = exists ? JSON.parse('{' + list + '}') : {};
+  var uploaded = exists ? JSON.parse('{' + fs.readFileSync(uploadedFilePath, 'utf-8').trim().replace(/,$/, '') + '}') : {};
 
   var upyun = new UPYun(opts.bucketname, opts.username, opts.password);
 
